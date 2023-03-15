@@ -12,10 +12,20 @@ namespace csharp_fundamentals_loops.Test
             this._exercise = new Exercise();
         }
 
-        [Test]
+         [Test]
         public void numsZeroToThreeShouldContainNumsZeroToThree()
         {
-            //int[] shouldBe = { 0, 1, 2, 3 };
+            int[] shouldBe = { 0, 1, 2, 3 };
+            try
+            {
+                _exercise.stepOne();                                
+                Assert.IsTrue(Enumerable.SequenceEqual(this._exercise.numsZeroToThree, shouldBe));
+            }
+            catch
+            {
+                Assert.Fail();
+            }
+
             //this.exercise.stepOne();
             //Assertions.assertArrayEquals(shouldBe, this.exercise.numsZeroToThree);
         }
@@ -23,17 +33,32 @@ namespace csharp_fundamentals_loops.Test
         [Test]
         public void numsFiveToTenShouldContainNumsFiveToTen()
         {
-            //int[] shouldBe = { 5, 6, 7, 8, 9, 10 };
-            //this.exercise.stepTwo();
-            //Assertions.assertArrayEquals(shouldBe, this.exercise.numsFiveToTen);
+            int[] shouldBe = { 5, 6, 7, 8, 9, 10 };
+            try
+            {
+                _exercise.stepTwo();
+                Assert.IsTrue(Enumerable.SequenceEqual(this._exercise.numsFiveToTen, shouldBe));
+            }
+            catch
+            {
+                Assert.Fail();
+            }
+                        
         }
 
         [Test]
         public void countdownShouldBeThreeToZero()
         {
-            //int[] shouldBe = { 3, 2, 1, 0 };
-            //this.exercise.stepThree();
-            //Assertions.assertArrayEquals(shouldBe, this.exercise.countdown);
+            int[] shouldBe = { 3, 2, 1, 0 };
+            try
+            {
+                _exercise.stepThree();
+                Assert.IsTrue(Enumerable.SequenceEqual(this._exercise.countdown, shouldBe));
+            }
+            catch
+            {
+                Assert.Fail();
+            }          
         }
 
         [Test]

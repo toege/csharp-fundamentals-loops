@@ -9,9 +9,9 @@ namespace csharp_fundamentals_loops.Main
 {
     public class Exercise
     {
-        public int[] numsZeroToThree= { };
-        public int[] numsFiveToTen = { };
-        public int[] countdown = { };
+        public int[] numsZeroToThree= new int[4];
+        public int[] numsFiveToTen = new int[6];
+        public int[] countdown = new int[4];
 
         public int[] favouriteNumbers = { 1, 2, 4, 5, 7, 8, 10 };
 
@@ -19,16 +19,14 @@ namespace csharp_fundamentals_loops.Main
 
         public void stepOne()
         {
-            // TODO: 1. Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array
-
-
+            // TODO: 1. Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array                        
+            throw new NotImplementedException();            
         }
 
         public void stepTwo()
         {
             // TODO: 2. Write a for loop that adds the numbers 5 to 10 to the numsFiveToTen array
             throw new NotImplementedException();
-
         }
 
         public void stepThree()
@@ -40,20 +38,14 @@ namespace csharp_fundamentals_loops.Main
 
         public bool stepFour(int num)
         {
-            // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
-
-
-
-            return false;
+            // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array            
+            throw new NotImplementedException();
         }
 
         public bool stepFive(string hobby)
         {
             // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
-
-
-
-            return false;
+            throw new NotImplementedException();
         }
     }
 

@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace csharp_fundamentals_loops.Main
 {
-    public class Exercise
+    public class Core
     {
         public int[] numsZeroToThree= new int[4];
         public int[] numsFiveToTen = new int[6];
